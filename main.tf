@@ -13,8 +13,8 @@ resource "aws_instance" "Rancher" {
       type     = "ssh"
       user     = "ubuntu"
       private_key = file("/home/ankit/aws-keybots4you.pem")
-      host = ""
-    #}
+      host = "seldft"
+    }
   }
 
   user_data = file("master.sh")
