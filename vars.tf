@@ -4,11 +4,11 @@
 # map
 
 variable "ami" {
-  default = "ami-09efdf376d45766a1" //for Ubuntu Server 16.04 LTS (HVM), SSD Volume Type
+  default = "ami-0d359437d1756caa8" //for Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
 }
 
 variable "instance_type" {
-  default = "t2.micro"
+  default = "t2.medium"
 }
 
 variable "aws_region" {
@@ -16,9 +16,12 @@ variable "aws_region" {
 }
 
 variable "instance_count" {
-  default = "2"
+  default = "1"
 }
 
+variable "sg_b4u" {
+  default = "sg-011bb40eed8f27434"
+}
 #variable "vpc_cidr" {
 
 
